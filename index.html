@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninad Padamwar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">NINAD</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#showcase">3D</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+
+    <!-- BACKGROUND SHAPES -->
+    <div class="bg-shapes">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+
+        <div class="star s1"></div>
+        <div class="star s2"></div>
+        <div class="star s3"></div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero fade-in">
+        <div class="hero-container">
+            <div class="hero-img tilt">
+                <img src="my portfolio.jpg" class="neon-img" alt="Ninad Padamwar" />
+            </div>
+
+            <div class="hero-text">
+                <h1>Hi I'm <span id="typing"></span></h1>
+                <p>Aspiring AI & ML Engineer | Android App Developer | Web Developer</p><br>
+
+                <div class="hero-btns">
+                    <a href="#" class="btn">Download Resume</a>
+                    <a href="#projects" class="btn-outline">View Projects</a>
+                </div>
+
+                <!-- Optional Lottie box (if you want later) -->
+                <div id="lottie-dev" class="lottie-box"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+            I am <b>Ninad Padamwar</b>, a SY B.Tech CSE (AI & ML) student at PCCOE Pune with strong interests in Android Development,
+            Machine Learning, Data Structures & Algorithms, and Full-Stack Development.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills fade-in">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <span>C</span><span>C++</span><span>Java</span><span>Kotlin</span>
+            <span>Python</span><span>R Language</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React</span><span>Git</span><span>GitHub</span>
+            <span>Android Studio</span><span>DSA</span>
+        </div>
+        <!-- JARVIS DIAGNOSTIC MODE -->
+<div class="jarvis-diagnostic">
+
+    <!-- Skill Analyzer Text -->
+    <div class="skill-analyzer fade-in">
+        <span id="analyzer-text"></span>
+    </div>
+
+    
+    <!-- Radar Pulse -->
+    <div class="radar-pulse"></div>
+
+    <!-- Side Power Panel -->
+    <div class="power-panel">
+        <h4>POWER LEVELS</h4>
+        <div class="power-bar"><span style="--p:90%">React</span></div>
+        <div class="power-bar"><span style="--p:85%">JavaScript</span></div>
+        <div class="power-bar"><span style="--p:80%">Node.js</span></div>
+        <div class="power-bar"><span style="--p:70%">MongoDB</span></div>
+        <div class="power-bar"><span style="--p:92%">HTML/CSS</span></div>
+        <div class="power-bar"><span style="--p:87%">DSA</span></div>
+    </div>
+</div>
+
+
+        <!-- NEURAL SKILL MAP (AI BRAIN MESH) -->
+         <!-- AI SKILL ANALYZER -->
+<div class="skill-analyzer fade-in">
+    <span id="analyzer-text"></span>
+</div>
+
+<div class="neural-section fade-in">
+  <h3 class="neural-title">Neural Skill Map</h3>
+
+  <div class="neural-map-wrapper">
+    <svg id="neural-map" viewBox="0 0 400 260">
+
+      <!-- CONNECTION LINES -->
+      <!-- React ↔ JavaScript -->
+      <line x1="80" y1="70" x2="200" y2="60" class="neural-link" />
+      <!-- React ↔ Node -->
+      <line x1="80" y1="70" x2="200" y2="145" class="neural-link" />
+      <!-- JavaScript ↔ Node -->
+      <line x1="200" y1="60" x2="200" y2="145" class="neural-link" />
+      <!-- Node ↔ MongoDB -->
+      <line x1="200" y1="145" x2="320" y2="160" class="neural-link" />
+      <!-- C++ ↔ DSA -->
+      <line x1="110" y1="210" x2="260" y2="210" class="neural-link" />
+      <!-- DSA ↔ React (cross link) -->
+      <line x1="260" y1="210" x2="80" y2="70" class="neural-link faint" />
+
+      <!-- NODES -->
+      <!-- React (Strong - Cyan) -->
+      <g class="neural-node-group" data-skill="React.js" data-level="Strong">
+        <circle cx="80" cy="70" r="10" class="neural-node level-strong" />
+        <text x="80" y="50" class="neural-label">React</text>
+      </g>
+
+      <!-- JavaScript (Master - White) -->
+      <g class="neural-node-group" data-skill="JavaScript" data-level="Master">
+        <circle cx="200" cy="60" r="11" class="neural-node level-master" />
+        <text x="200" y="40" class="neural-label">JavaScript</text>
+      </g>
+
+      <!-- Node.js (Strong - Cyan) -->
+      <g class="neural-node-group" data-skill="Node.js" data-level="Strong">
+        <circle cx="200" cy="145" r="10" class="neural-node level-strong" />
+        <text x="200" y="170" class="neural-label">Node.js</text>
+      </g>
+
+      <!-- MongoDB (Intermediate - Purple) -->
+      <g class="neural-node-group" data-skill="MongoDB" data-level="Intermediate">
+        <circle cx="320" cy="160" r="9" class="neural-node level-intermediate" />
+        <text x="320" y="185" class="neural-label">MongoDB</text>
+      </g>
+
+      <!-- C++ (Strong - Cyan) -->
+      <g class="neural-node-group" data-skill="C++" data-level="Strong">
+        <circle cx="110" cy="210" r="10" class="neural-node level-strong" />
+        <text x="110" y="235" class="neural-label">C++</text>
+      </g>
+
+      <!-- DSA (Master - White) -->
+      <g class="neural-node-group" data-skill="DSA" data-level="Master">
+        <circle cx="260" cy="210" r="11" class="neural-node level-master" />
+        <text x="260" y="235" class="neural-label">DSA</text>
+      </g>
+    </svg>
+
+    <!-- Tooltip -->
+    <div class="neural-tooltip" id="neural-tooltip">
+      <span class="neural-tooltip-skill">Skill</span>
+      <span class="neural-tooltip-level">Level</span>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="neural-legend">
+    <span><span class="dot dot-beginner"></span> Blue = Beginner</span>
+    <span><span class="dot dot-intermediate"></span> Purple = Intermediate</span>
+    <span><span class="dot dot-strong"></span> Cyan = Strong</span>
+    <span><span class="dot dot-master"></span> White = Master</span>
+  </div>
+</div>
+
+    </section>
+    <!--Projects-->
+    <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-wrapper">
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxKA7HvO10GTQBbTTroY57QxgaI-W6kfyUw&s" alt="" />
+            <h3>Weather App</h3>
+            <p>Real-time weather app with API integration.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://play-lh.googleusercontent.com/IV7KixxM8-W5iPDtCNV2Yo-47c1IDD6GVUYI_CE1qC8EH_iCW-e6MH-vEzmeoBSgX7o=w526-h296-rw" alt="" />
+            <h3>Gallery View App (Kotlin)</h3>
+            <p>Android image viewer with smooth animations.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqlrx0ob3ijwa5gb9r4f5.gif" alt="" />
+            <h3>To-Do List App</h3>
+            <p>Organize tasks with CRUD functionality.</p>
+        </div>
+
+        <div class="project-card">
+            <img src=https://cdn.dribbble.com/userupload/43567420/file/original-bf5e1d7a88e2c1f34449b7873d649efe.png?resize=752x&vertical=center"" alt="" />
+            <h3>Moody Music Web App</h3>
+            <p>Mood-based music player.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/30873e146082863.62a9e25db13cc.png" alt="" />
+            <h3>Web Calculator</h3>
+            <p>Interactive calculator with glass UI.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbhMKhaM7cp9K-7UMAIkb4VVHYymrxY0IXBg&s" alt="" />
+            <h3>Nike </h3>
+            <p>Created a Mordern landing page for Nike</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+    
+    </div>
+
+    <div class="hud-border"></div>
+</div>
+
+    </section>
+
+    <!-- animated HUD border -->
+    <div class="hud-border"></div>
+</div>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education fade-in">
+        <h2>Education</h2>
+        <div class="edu-card tilt">
+            <h3>PCCOE Pune</h3>
+            <p>B.Tech CSE (AI & ML)</p>
+            <p>2024 – 2028</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+            <a href="mailto:ninadpadamwar@gmail.com" class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="" />
+                <span>Email</span>
+                <p>ninadpadamwar@gmail.com</p>
+            </a>
+
+            <a href="https://github.com/Ninad2006P" target="_blank" class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="" />
+                <span>GitHub</span>
+                <p>github.com/Ninad2006P</p>
+            </a>
+
+            <a href="https://linkedin.com/in/ninadpadamwar" target="_blank" class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" />
+                <span>LinkedIn</span>
+                <p>linkedin.com/in/ninadpadamwar</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- 3D SHOWCASE -->
+    <section id="showcase" class="showcase fade-in">
+    <h2>3D Dev Cube</h2>
+    <p class="showcase-subtitle">Technologies orbiting in a cyberpunk galaxy</p>
+
+    <div class="three-wrapper">
+
+        <!-- JARVIS HUD RADAR BELOW -->
+<div class="hud-radar">
+    <div class="radar-ring r1"></div>
+    <div class="radar-ring r2"></div>
+    <div class="radar-ring r3"></div>
+    <div class="radar-pulse"></div>
+    <div class="radar-sweep"></div>
+</div>
+
+        
+        <!-- Three.js -->
+        <canvas id="three-canvas"></canvas>
+
+        <!-- Electric Link Lines Canvas -->
+        <canvas id="electric-lines"></canvas>
+
+        <!-- Orbit Icons Layer -->
+        <div class="orbit-container">
+            <div class="orbit-icon i1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+            </div>
+            <div class="orbit-icon i2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+            </div>
+            <div class="orbit-icon i3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+            </div>
+            <div class="orbit-icon i4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+            </div>
+            <div class="orbit-icon i5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+            </div>
+            <div class="orbit-icon i6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- BOTTOM IMAGE -->
+    <div class="hero-img bottom-image fade-in">
+        <img src="https://i.pinimg.com/474x/b4/64/e8/b464e8a15cd775e92b56a4eee3be27bb.jpg" alt="Ninad Profile" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Designed by Ninad Padamwar</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://threejs.org/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://threejs.org/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://threejs.org/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
